@@ -13,7 +13,7 @@
     <RootNamespace>SpendingPolicyDoc</RootNamespace>
     <Name>SpendingPolicyDoc</Name>
     <!-- SHFB properties -->
-    <FrameworkVersion>.NET Framework 4.5</FrameworkVersion>
+    <FrameworkVersion>.NET Framework 4.6</FrameworkVersion>
     <OutputPath>.\Help\</OutputPath>
     <HtmlHelpName>SpendingPolicyDoc</HtmlHelpName>
     <Language>en-US</Language>
@@ -26,6 +26,48 @@
       <Argument Key="logoAlignment" Value="left" xmlns="" />
       <Argument Key="maxVersionParts" Value="" xmlns="" />
     </TransformComponentArguments>
+    <VisibleItems>Attributes, ExplicitInterfaceImplementations, InheritedMembers, Protected, ProtectedInternalAsProtected</VisibleItems>
+    <DocumentationSources>
+      <DocumentationSource sourceFile="..\..\..\C#2017\SpendingPolicyAddin\SpendingPolicyAddin.sln" />
+      <DocumentationSource sourceFile="..\..\..\C#2017\SpendingPolicyAddin\ref\SharpHelper.dll" />
+      <DocumentationSource sourceFile="..\..\..\C#2017\SpendingPolicyAddin\ref\SharpHelper.xml" />
+      <DocumentationSource sourceFile="..\..\..\C#2017\SpendingPolicyAddin\ref\SharpExcelAddinBase.dll" />
+      <DocumentationSource sourceFile="..\..\..\C#2017\SpendingPolicyAddin\ref\SharpExcelAddinBase.xml" />
+    </DocumentationSources>
+    <SaveComponentCacheCapacity>100</SaveComponentCacheCapacity>
+    <BuildAssemblerVerbosity>OnlyWarningsAndErrors</BuildAssemblerVerbosity>
+    <HelpFileFormat>HtmlHelp1</HelpFileFormat>
+    <IndentHtml>False</IndentHtml>
+    <KeepLogFile>True</KeepLogFile>
+    <DisableCodeBlockComponent>False</DisableCodeBlockComponent>
+    <CleanIntermediates>True</CleanIntermediates>
+    <MissingTags>Summary, Parameter, AutoDocumentCtors, TypeParameter, AutoDocumentDispose</MissingTags>
+    <HelpFileVersion>1.0.0.0</HelpFileVersion>
+    <MaximumGroupParts>2</MaximumGroupParts>
+    <NamespaceGrouping>True</NamespaceGrouping>
+    <SyntaxFilters>Standard</SyntaxFilters>
+    <SdkLinkTarget>Blank</SdkLinkTarget>
+    <RootNamespaceTitle>APIs</RootNamespaceTitle>
+    <RootNamespaceContainer>True</RootNamespaceContainer>
+    <PresentationStyle>VS2013</PresentationStyle>
+    <Preliminary>False</Preliminary>
+    <NamingMethod>Guid</NamingMethod>
+    <HelpTitle>A Sandcastle Documented Class Library</HelpTitle>
+    <ContentPlacement>AboveNamespaces</ContentPlacement>
+    <ApiFilter>
+      <Filter entryType="Namespace" fullName="SharpExcelAddinBase" isExposed="False" />
+<Filter entryType="Namespace" fullName="SharpExcelAddinBase.Regristration" isExposed="True">
+  <Filter entryType="Class" fullName="SharpExcelAddinBase.Regristration.SuppressInDialogAttribute" filterName="SuppressInDialogAttribute" isExposed="False">
+    <Filter entryType="Constructor" fullName="SharpExcelAddinBase.Regristration.SuppressInDialogAttribute.#ctor" filterName=".ctor" isExposed="True" />
+  </Filter>
+</Filter>
+<Filter entryType="Namespace" fullName="XamlGeneratedNamespace" isExposed="False" />
+<Filter entryType="Namespace" fullName="ExcelDna.Integration" isExposed="True">
+  <Filter entryType="Class" fullName="ExcelDna.Integration.ExcelComAddIn" filterName="ExcelComAddIn" isExposed="False" />
+</Filter>
+<Filter entryType="Namespace" fullName="ExcelDna.Integration.CustomUI" isExposed="True">
+  <Filter entryType="Class" fullName="ExcelDna.Integration.CustomUI.ExcelRibbon" filterName="ExcelRibbon" isExposed="False" />
+</Filter></ApiFilter>
   </PropertyGroup>
   <!-- There are no properties for these groups.  AnyCPU needs to appear in order for Visual Studio to perform
 			 the build.  The others are optional common platform types that may appear. -->
